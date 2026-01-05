@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Phone, Globe, Cpu, Activity, Shield, ArrowRight,
-  Bot, Zap, Mic, Menu, X, Mail, MapPin, Smartphone
+  Target, Megaphone, Search, TrendingUp, Shield, ArrowRight,
+  BarChart3, Zap, Globe, Menu, X, Mail, MapPin, Smartphone,
+  Users, FileText, Palette, Layers
 } from 'lucide-react';
 import './App.css';
 
@@ -40,10 +41,10 @@ function App() {
           </div>
 
           <div className="desktop-nav">
-            <button onClick={() => scrollToSection('services')} className="nav-link">Capabilities</button>
-            <button onClick={() => scrollToSection('technology')} className="nav-link">Intelligence</button>
-            <button onClick={() => scrollToSection('features')} className="nav-link">Infrastructure</button>
-            <button onClick={() => scrollToSection('contact')} className="btn btn-primary">Partner With Us</button>
+            <button onClick={() => scrollToSection('services')} className="nav-link">Services</button>
+            <button onClick={() => scrollToSection('intelligence')} className="nav-link">Intelligence</button>
+            <button onClick={() => scrollToSection('strategy')} className="nav-link">Strategy</button>
+            <button onClick={() => scrollToSection('contact')} className="btn btn-primary">Start Your Campaign</button>
           </div>
 
           <button className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -53,10 +54,10 @@ function App() {
 
         {mobileMenuOpen && (
           <div className="mobile-menu">
-            <button onClick={() => scrollToSection('services')} className="mobile-link">Capabilities</button>
-            <button onClick={() => scrollToSection('technology')} className="mobile-link">Intelligence</button>
-            <button onClick={() => scrollToSection('features')} className="mobile-link">Infrastructure</button>
-            <button onClick={() => scrollToSection('contact')} className="mobile-link primary">Partner With Us</button>
+            <button onClick={() => scrollToSection('services')} className="mobile-link">Services</button>
+            <button onClick={() => scrollToSection('intelligence')} className="mobile-link">Intelligence</button>
+            <button onClick={() => scrollToSection('strategy')} className="mobile-link">Strategy</button>
+            <button onClick={() => scrollToSection('contact')} className="mobile-link primary">Start Your Campaign</button>
           </div>
         )}
       </nav>
@@ -64,8 +65,7 @@ function App() {
       {/* Hero Section */}
       <header className="hero">
         <div className="hero-bg-image">
-          {/* Using the generated image */}
-          <img src="/hero-bg.png" alt="Neural Network Background" />
+          <img src="/hero-bg-new.png" alt="Digital Growth Background" />
           <div className="hero-overlay"></div>
         </div>
 
@@ -73,47 +73,45 @@ function App() {
           <div className="hero-text">
             <div className="badge animate-fade-in">
               <span className="badge-dot"></span>
-              Enterprise-Grade Communications
+              Full-Service Digital Marketing Agency
             </div>
             <h1 className="animate-fade-in delay-100">
-              Architecting the <br />
-              <span className="gradient-text-primary">Voice of Tomorrow</span>
+              Architecting <br />
+              <span className="gradient-text-primary">Digital Growth</span>
             </h1>
             <p className="animate-fade-in delay-200">
-              Orchestrating the convergence of human intuition and artificial intelligence.
-              VoxSphere engineers bespoke IVR and Concierge architectures for the world's most discerning enterprises.
+              We fuse creative intuition with data-driven precision. Voxsphere is a full-service digital marketing agency dedicated to scaling the world's most ambitious brands through innovative strategies and relentless optimization.
             </p>
             <div className="hero-buttons animate-fade-in delay-300">
               <button onClick={() => scrollToSection('contact')} className="btn btn-primary">
-                Schedule Briefing <ArrowRight size={18} style={{ marginLeft: '0.5rem' }} />
+                Start Your Campaign <ArrowRight size={18} style={{ marginLeft: '0.5rem' }} />
               </button>
               <button onClick={() => scrollToSection('services')} className="btn btn-secondary">
-                View Capabilities
+                View Services
               </button>
             </div>
           </div>
 
           <div className="hero-visual animate-fade-in delay-300">
-            {/* Abstract UI representation */}
             <div className="ui-card glass-card">
               <div className="ui-header">
                 <div className="ui-avatar">
-                  <Bot size={24} color="#7c3aed" />
+                  <TrendingUp size={24} color="#7c3aed" />
                 </div>
                 <div className="ui-info">
-                  <div className="ui-name">VoxSphere Prime</div>
-                  <div className="ui-status">System Operational • Awaiting Input</div>
+                  <div className="ui-name">Growth Analytics</div>
+                  <div className="ui-status">Live Campaign Tracking</div>
                 </div>
               </div>
               <div className="ui-wave">
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
+                <div className="bar" style={{ height: '30px' }}></div>
+                <div className="bar" style={{ height: '50px' }}></div>
+                <div className="bar" style={{ height: '80px' }}></div>
+                <div className="bar" style={{ height: '60px' }}></div>
+                <div className="bar" style={{ height: '90px' }}></div>
               </div>
               <div className="ui-message">
-                "Good morning. Connecting you to the executive suite."
+                "Conversion rate increased by 24% this week."
               </div>
             </div>
           </div>
@@ -124,57 +122,56 @@ function App() {
       <section id="services" className="section-padding services">
         <div className="container">
           <div className="section-header">
-            <h2>The Ecosystem</h2>
-            <p>From refined legacy frameworks to avant-garde AI integration.</p>
+            <h2>The Marketing Ecosystem</h2>
+            <p>Comprehensive solutions designed to dominate the digital landscape.</p>
           </div>
 
           <div className="grid-3">
             <ServiceCard
-              icon={<Phone size={32} />}
-              title="Intelligent Routing"
-              description="Sophisticated logic pathways that virtually eliminate friction and optimize client direction."
+              icon={<Target size={32} />}
+              title="Strategic Campaigns"
+              description="Data-backed marketing strategies that drive measurable growth and long-term brand loyalty."
             />
             <ServiceCard
-              icon={<Bot size={32} />}
-              title="Cognitive Concierge"
-              description="Empowered by Natural Language Processing to discern intent with human-like precision."
+              icon={<Megaphone size={32} />}
+              title="Performance Advertising"
+              description="High-impact ad campaigns across search, social, and display networks optimized for maximum ROI."
             />
             <ServiceCard
-              icon={<Activity size={32} />}
-              title="Virtual Receptionist"
-              description="Uninterrupted 24/7 presence managing bookings and inquiries with absolute professionalism."
+              icon={<Search size={32} />}
+              title="Content Auditing"
+              description="Comprehensive analysis and optimization of your digital footprint to ensure maximum engagement and impact."
             />
           </div>
         </div>
       </section>
 
-      {/* Technology / Features */}
-      <section id="technology" className="section-padding tech-section">
+      {/* Intelligence Section */}
+      <section id="intelligence" className="section-padding tech-section">
         <div className="container">
           <div className="tech-layout">
             <div className="tech-info">
-              <h2 className="gradient-text">Symbiotic Intelligence</h2>
+              <h2 className="gradient-text">Data-Driven Intelligence</h2>
               <p>
-                We do not merely upgrade systems; we elevate them. VoxSphere fuses the reliability of
-                foundational telephony with the adaptive brilliance of Generative AI.
+                We don't just guess; we analyze. Voxsphere combines creative excellence with advanced analytics to deliver superior results and predictable scaling.
               </p>
 
               <ul className="tech-list">
                 <li>
+                  <div className="check-icon"><BarChart3 size={16} /></div>
+                  <span>Predictive Audience Modeling</span>
+                </li>
+                <li>
+                  <div className="check-icon"><Layers size={16} /></div>
+                  <span>Cross-Channel Optimization</span>
+                </li>
+                <li>
                   <div className="check-icon"><Zap size={16} /></div>
-                  <span>Instantaneous Intent Recognition</span>
-                </li>
-                <li>
-                  <div className="check-icon"><Globe size={16} /></div>
-                  <span>Polyglot Fluency (80+ Dials)</span>
-                </li>
-                <li>
-                  <div className="check-icon"><Cpu size={16} /></div>
-                  <span>Real-time Sentiment Calibration</span>
+                  <span>Real-time Performance Tracking</span>
                 </li>
                 <li>
                   <div className="check-icon"><Shield size={16} /></div>
-                  <span>SOC2 Type II Compliant Security</span>
+                  <span>Conversion Rate Optimization</span>
                 </li>
               </ul>
             </div>
@@ -182,30 +179,30 @@ function App() {
             <div className="tech-visual">
               <div className="glass-card tech-card">
                 <div className="stat-row">
-                  <span>Resolution Efficiency</span>
-                  <span className="stat-val">98.4%</span>
+                  <span>Average ROI Increase</span>
+                  <span className="stat-val">145%</span>
                 </div>
-                <div className="progress-bar"><div className="fill" style={{ width: '98.4%' }}></div></div>
+                <div className="progress-bar"><div className="fill" style={{ width: '85%' }}></div></div>
 
                 <div className="stat-row" style={{ marginTop: '1.5rem' }}>
-                  <span>Operational Savings</span>
-                  <span className="stat-val">72%</span>
+                  <span>Customer Acquisition Cost Reduction</span>
+                  <span className="stat-val">38%</span>
                 </div>
-                <div className="progress-bar"><div className="fill" style={{ width: '72%' }}></div></div>
+                <div className="progress-bar"><div className="fill" style={{ width: '65%' }}></div></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section id="features" className="section-padding features-grid-sec">
+      {/* Strategy Grid */}
+      <section id="strategy" className="section-padding features-grid-sec">
         <div className="container">
           <div className="grid-4">
-            <FeatureItem title="Precision Routing" icon={<MapPin />} text="Geolocation and data-driven endpoint logic." />
-            <FeatureItem title="Acoustic Biometrics" icon={<Mic />} text="Military-grade identity verification via voiceprint." />
-            <FeatureItem title="CRM Synchronization" icon={<Activity />} text="Deep integration with Salesforce & enterprise ERPs." />
-            <FeatureItem title="Unified Omnichannel" icon={<Globe />} text="A singular interface for Voice, SMS, and Data." />
+            <FeatureItem title="Precision Targeting" icon={<Users />} text="Reaching your ideal audience with surgical precision." />
+            <FeatureItem title="Content Strategy" icon={<FileText />} text="Crafting narratives that convert and build brand authority." />
+            <FeatureItem title="SEO Excellence" icon={<Globe />} text="Dominating search results through technical and creative mastery." />
+            <FeatureItem title="Brand Identity" icon={<Palette />} text="Designing visual identities that resonate and endure." />
           </div>
         </div>
       </section>
@@ -215,21 +212,21 @@ function App() {
         <div className="container">
           <div className="contact-wrapper glass-card">
             <div className="contact-info">
-              <h2>Initiate Dialogue</h2>
-              <p>Secure your place at the forefront of the acoustic revolution.</p>
+              <h2>Initiate Growth</h2>
+              <p>Partner with us to redefine your digital presence and scale your brand.</p>
 
               <div className="contact-details">
                 <div className="c-item">
                   <Mail className="c-icon" />
-                  <span>concierge@voxsphere.tech</span>
+                  <span>hello@voxsphere.agency</span>
                 </div>
                 <div className="c-item">
                   <Phone className="c-icon" />
-                  <span>+1 (888) 909-VOX-AI</span>
+                  <span>+1 (888) 555-GROW</span>
                 </div>
                 <div className="c-item">
-                  <Smartphone className="c-icon" />
-                  <span>Text 'ELITE' to 55022</span>
+                  <MapPin className="c-icon" />
+                  <span>Global HQ • Digital First</span>
                 </div>
               </div>
             </div>
@@ -237,21 +234,22 @@ function App() {
             <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
               <div className="form-group">
                 <label>Organization</label>
-                <input type="text" placeholder="e.g. Acme Global Holdings" />
+                <input type="text" placeholder="e.g. Acme Global" />
               </div>
               <div className="form-group">
-                <label>Executive Email</label>
-                <input type="email" placeholder="name@corporation.com" />
+                <label>Work Email</label>
+                <input type="email" placeholder="name@company.com" />
               </div>
               <div className="form-group">
                 <label>Area of Interest</label>
                 <select>
-                  <option>Cognitive Call Concierge</option>
-                  <option>Enterprise IVR Architecture</option>
-                  <option>Full Ecosystem Suite</option>
+                  <option>Strategic Campaign</option>
+                  <option>Performance Advertising</option>
+                  <option>Content Audit & Strategy</option>
+                  <option>Full-Service Marketing</option>
                 </select>
               </div>
-              <button className="btn btn-primary full-width">Request Private Consultation</button>
+              <button className="btn btn-primary full-width">Request Consultation</button>
             </form>
           </div>
         </div>
@@ -262,7 +260,7 @@ function App() {
         <div className="container footer-content">
           <div className="footer-brand">
             <h3>VOXSPHERE</h3>
-            <p>Pioneering the acoustic interface of tomorrow.</p>
+            <p>Pioneering the digital landscape of tomorrow.</p>
           </div>
           <div className="footer-links">
             <a href="#">Privacy</a>
@@ -272,7 +270,7 @@ function App() {
           </div>
         </div>
         <div className="footer-bottom">
-          &copy; 2024 VoxSphere Technologies. All rights reserved.
+          &copy; 2026 Voxsphere Marketing Agency. All rights reserved.
         </div>
       </footer>
     </div>
