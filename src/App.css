@@ -625,26 +625,51 @@
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
 
   .hero p {
     margin: 0 auto 2rem;
+    font-size: 1.1rem;
   }
 
   .hero-buttons {
-    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .tech-layout {
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
+  }
+
+  .tech-info h2 {
+    font-size: 2.5rem;
   }
 
   .contact-wrapper {
     grid-template-columns: 1fr;
-    gap: 4rem;
-    padding: 2rem;
+    gap: 3rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-info h2 {
+    font-size: 2.5rem;
   }
 
   .contact-info {
@@ -653,6 +678,7 @@
 
   .contact-details {
     align-items: center;
+    margin-top: 2rem;
   }
 
   .section-padding {
@@ -660,7 +686,7 @@
   }
 
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   .desktop-nav {
@@ -672,15 +698,50 @@
   }
 
   .mobile-menu {
-    position: absolute;
-    top: 90px;
+    position: fixed;
+    top: 80px;
     left: 0;
     width: 100%;
-    background: black;
-    padding: 2rem;
+    height: calc(100vh - 80px);
+    background: rgba(5, 5, 7, 0.98);
+    backdrop-filter: blur(20px);
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    border-bottom: 1px solid #222;
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .mobile-link {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .mobile-link.primary {
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
   }
 }
