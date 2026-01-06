@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   Target, Megaphone, Search, TrendingUp, Shield, ArrowRight,
-  BarChart3, Zap, Globe, Menu, X, Mail, MapPin, Smartphone,
+  BarChart3, Zap, Globe, Menu, X, Mail, MapPin, Phone,
   Users, FileText, Palette, Layers
 } from 'lucide-react';
 import './App.css';
@@ -73,21 +73,21 @@ function App() {
           <div className="hero-text">
             <div className="badge animate-fade-in">
               <span className="badge-dot"></span>
-              Full-Service Digital Marketing Agency
+              AI-First Digital Evolution Agency
             </div>
             <h1 className="animate-fade-in delay-100">
               Architecting <br />
-              <span className="gradient-text-primary">Digital Growth</span>
+              <span className="gradient-text-primary">Intelligent Futures</span>
             </h1>
             <p className="animate-fade-in delay-200">
-              We fuse creative intuition with data-driven precision. Voxsphere is a full-service digital marketing agency dedicated to scaling the world's most ambitious brands through innovative strategies and relentless optimization.
+              We fuse neural networks with creative intuition. Voxsphere is a full-service AI marketing agency dedicated to scaling the world's most ambitious brands through predictive strategies and autonomous optimization.
             </p>
             <div className="hero-buttons animate-fade-in delay-300">
               <button onClick={() => scrollToSection('contact')} className="btn btn-primary">
-                Start Your Campaign <ArrowRight size={18} style={{ marginLeft: '0.5rem' }} />
+                Initiate AI Campaign <ArrowRight size={18} style={{ marginLeft: '0.5rem' }} />
               </button>
               <button onClick={() => scrollToSection('services')} className="btn btn-secondary">
-                View Services
+                Explore Solutions
               </button>
             </div>
           </div>
@@ -99,8 +99,8 @@ function App() {
                   <TrendingUp size={24} color="#7c3aed" />
                 </div>
                 <div className="ui-info">
-                  <div className="ui-name">Growth Analytics</div>
-                  <div className="ui-status">Live Campaign Tracking</div>
+                  <div className="ui-name">Neural Predictive Model</div>
+                  <div className="ui-status">Live Algorithm Tracking</div>
                 </div>
               </div>
               <div className="ui-wave">
@@ -111,7 +111,7 @@ function App() {
                 <div className="bar" style={{ height: '90px' }}></div>
               </div>
               <div className="ui-message">
-                "Conversion rate increased by 24% this week."
+                "AI projects 145% ROI uplift this quarter."
               </div>
             </div>
           </div>
@@ -122,25 +122,25 @@ function App() {
       <section id="services" className="section-padding services">
         <div className="container">
           <div className="section-header">
-            <h2>The Marketing Ecosystem</h2>
-            <p>Comprehensive solutions designed to dominate the digital landscape.</p>
+            <h2>The AI Ecosystem</h2>
+            <p>Comprehensive autonomous solutions designed to dominate the digital landscape.</p>
           </div>
 
           <div className="grid-3">
             <ServiceCard
               icon={<Target size={32} />}
-              title="Strategic Campaigns"
-              description="Data-backed marketing strategies that drive measurable growth and long-term brand loyalty."
+              title="AI-Powered Strategy"
+              description="Deep learning models that analyze market patterns to predict trends and drive measurable growth."
             />
             <ServiceCard
               icon={<Megaphone size={32} />}
-              title="Performance Advertising"
-              description="High-impact ad campaigns across search, social, and display networks optimized for maximum ROI."
+              title="Algorithmic Ad Optimization"
+              description="High-frequency bidding systems across search, social, and display networks optimized for maximum ROI."
             />
             <ServiceCard
               icon={<Search size={32} />}
-              title="Content Auditing"
-              description="Comprehensive analysis and optimization of your digital footprint to ensure maximum engagement and impact."
+              title="Cognitive Content Analysis"
+              description="NLP-driven auditing and optimization of your digital footprint to ensure maximum resonance and impact."
             />
           </div>
         </div>
@@ -151,9 +151,9 @@ function App() {
         <div className="container">
           <div className="tech-layout">
             <div className="tech-info">
-              <h2 className="gradient-text">Data-Driven Intelligence</h2>
+              <h2 className="gradient-text">Sentient Market Intelligence</h2>
               <p>
-                We don't just guess; we analyze. Voxsphere combines creative excellence with advanced analytics to deliver superior results and predictable scaling.
+                We don't just guess; we compute. Voxsphere combines creative excellence with advanced machine learning to deliver superior results and predictable scaling.
               </p>
 
               <ul className="tech-list">
@@ -163,15 +163,15 @@ function App() {
                 </li>
                 <li>
                   <div className="check-icon"><Layers size={16} /></div>
-                  <span>Cross-Channel Optimization</span>
+                  <span>Generative Cross-Channel Optimization</span>
                 </li>
                 <li>
                   <div className="check-icon"><Zap size={16} /></div>
-                  <span>Real-time Performance Tracking</span>
+                  <span>Real-time Neural Tracking</span>
                 </li>
                 <li>
                   <div className="check-icon"><Shield size={16} /></div>
-                  <span>Conversion Rate Optimization</span>
+                  <span>Automated Conversion Rate Optimization</span>
                 </li>
               </ul>
             </div>
@@ -199,10 +199,10 @@ function App() {
       <section id="strategy" className="section-padding features-grid-sec">
         <div className="container">
           <div className="grid-4">
-            <FeatureItem title="Precision Targeting" icon={<Users />} text="Reaching your ideal audience with surgical precision." />
-            <FeatureItem title="Content Strategy" icon={<FileText />} text="Crafting narratives that convert and build brand authority." />
-            <FeatureItem title="SEO Excellence" icon={<Globe />} text="Dominating search results through technical and creative mastery." />
-            <FeatureItem title="Brand Identity" icon={<Palette />} text="Designing visual identities that resonate and endure." />
+            <FeatureItem title="Algorithmic Targeting" icon={<Users />} text="Reaching your ideal audience with sub-millisecond precision." />
+            <FeatureItem title="Generative Strategy" icon={<FileText />} text="Crafting narratives that convert using LLM-assisted frameworks." />
+            <FeatureItem title="Semantic SEO" icon={<Globe />} text="Dominating search results through technical and cognitive mastery." />
+            <FeatureItem title="Digital Identity" icon={<Palette />} text="Designing visual identities that resonate and endure in the AI era." />
           </div>
         </div>
       </section>
@@ -212,21 +212,21 @@ function App() {
         <div className="container">
           <div className="contact-wrapper glass-card">
             <div className="contact-info">
-              <h2>Initiate Growth</h2>
+              <h2>Initiate Protocol</h2>
               <p>Partner with us to redefine your digital presence and scale your brand.</p>
 
               <div className="contact-details">
                 <div className="c-item">
                   <Mail className="c-icon" />
-                  <span>hello@voxsphere.agency</span>
+                  <span>neural@voxsphere.ai</span>
                 </div>
                 <div className="c-item">
                   <Phone className="c-icon" />
-                  <a href="tel:+18885554769" className="contact-link">+1 (888) 555-GROW</a>
+                  <a href="tel:+18885554769" className="contact-link">+1 (888) 555-DATA</a>
                 </div>
                 <div className="c-item">
                   <MapPin className="c-icon" />
-                  <span>Global HQ • Digital First</span>
+                  <span>Global HQ • Cloud Native</span>
                 </div>
               </div>
             </div>
@@ -263,14 +263,14 @@ function App() {
             <p>Pioneering the digital landscape of tomorrow.</p>
           </div>
           <div className="footer-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Twitter</a>
+            <a href="#">Privacy Protocol</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Neural Net</a>
             <a href="#">LinkedIn</a>
           </div>
         </div>
         <div className="footer-bottom">
-          &copy; 2026 Voxsphere Marketing Agency. All rights reserved.
+          &copy; 2026 Voxsphere AI Marketing Agency. All rights reserved.
         </div>
       </footer>
     </div>

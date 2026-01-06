@@ -298,6 +298,27 @@
   }
 }
 
+.footer-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #222;
+  padding: 1rem 0;
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+  z-index: 1000;
+  letter-spacing: 0.05em;
+}
+
+/* Ensure body has space for fixed footer */
+.app {
+  padding-bottom: 60px;
+}
+
 .ui-message {
   font-style: normal;
   color: var(--text-main);
@@ -750,8 +771,9 @@
   }
 
   .footer-links {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
-    align-items: center;
   }
 }
