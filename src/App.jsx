@@ -222,7 +222,7 @@ function App() {
                 </div>
                 <div className="c-item">
                   <Phone className="c-icon" />
-                  <span>+1 (888) 555-GROW</span>
+                  <a href="tel:+18885554769" className="contact-link">+1 (888) 555-GROW</a>
                 </div>
                 <div className="c-item">
                   <MapPin className="c-icon" />
